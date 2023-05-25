@@ -13,9 +13,7 @@ export default function Products() {
   }, []);
   const handleClick = (item) => {
     favorites?.find((q) => q.id == item.id) ? dispatch(removeFavoriteAction(item)) : dispatch(addFavoritesAction(item))
-
   }
-  console.log(removeFavoriteAction());
   return (
     <> <table>
       <thead>
